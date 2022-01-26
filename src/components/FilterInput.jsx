@@ -8,7 +8,7 @@ function FilterInput(props) {
       type="number"
       data-testid="value-filter"
       value={ value }
-      onChange={ handleChange }
+      onChange={ (event) => handleChange(event.target.value) }
     />
   );
 }

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import FilterInput from './FilterInput';
 import FilterSelect from './FilterSelect';
 import GlobalContext from '../context/GlobalContex';
+import Button from './Button';
 
 function FilterHeader() {
   const {
@@ -32,12 +33,7 @@ function FilterHeader() {
         value={ value }
         handleChange={ setValue }
       />
-      {/* <FilterSelect
-        testId="value-filter"
-        value={ value }
-        handleChange={ () => 0 }
-        valuesArray={  }
-      /> */}
+      <Button />
     </div>
 
   );

@@ -5,10 +5,11 @@ import getApi from '../services/api';
 
 function GlobalProvider({ children }) {
   const [data, setData] = useState([]);
-  const [column, setColumn] = useState('');
-  const [comparison, setComparison] = useState('');
-  const [value, setValue] = useState('');
+  const [column, setColumn] = useState('population');
+  const [comparison, setComparison] = useState('maior que');
+  const [value, setValue] = useState(0);
   const [search, setSearch] = useState('');
+  const [filter, setFilter] = useState([]);
 
   useEffect(() => {
     const handelApi = () => {
@@ -31,6 +32,8 @@ function GlobalProvider({ children }) {
         setValue,
         search,
         setSearch,
+        filter,
+        setFilter,
       } }
     >
       {children}
