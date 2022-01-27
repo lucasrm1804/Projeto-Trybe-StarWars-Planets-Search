@@ -12,7 +12,7 @@ function FilterHeader() {
     setComparison,
     value,
     setValue,
-    filter
+    filter,
   } = useContext(GlobalContext);
   const valuesArr = ['population', 'orbital_period', 'diameter',
     'rotation_period', 'surface_water'];
